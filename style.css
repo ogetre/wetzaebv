@@ -1,0 +1,331 @@
+html, body {
+    height: 100%;
+}
+.tendaysforecast{
+    flex-direction: column;
+    border-radius: 20px;
+    display: flex;
+    margin-top:10px;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(0, 0, 0, 0.5);
+    max-width: 800px;
+    height: 500px;
+    Font-family: 'MyCustomFont';
+    color:white;
+    
+}
+#hourforecast{
+    text-align: center;
+    color: white;
+    flex-direction: row;
+    width:800px ;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0, 0.5);
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    white-space: nowrap; /* Запобігає переносу тексту */
+    overflow-x: auto;
+}
+.tendaysforecast div{
+    text-align: center;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    height: 40px;
+    width: 100%;}
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('SanFrancisco/SFUIDisplay-Thin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;}
+
+body{
+    /* background: linear-gradient(180deg, rgba(125,124,124,1) 0%, rgba(61,61,61,1) 100%); */
+    /* background: linear-gradient(180deg, rgba(6,18,128,1) 0%, rgba(0,82,255,1) 100%); */
+    background-repeat: no-repeat;
+    /* background: linear-gradient(180deg, rgba(0,0,0,0)  100%); */
+    height: 10%;
+}
+#global{
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    color:white;
+    font-family: 'MyCustomFont'
+}
+#CityName{
+    z-index: 2;
+    font-size: 60px;
+    margin-top: 70px;
+    margin-bottom: 55px;
+    line-height: 0;
+}
+#tempglobal{
+    z-index: 2;
+    margin: 0;
+    font-size: 90px;
+    line-height: 0;
+}
+
+#weatherforecast{
+    z-index: 2;
+    margin-top:80px;
+    font-size: 30px;
+    line-height: 0;
+}
+#maxmin{
+    margin-top: 0px;
+}
+#tendayslabel{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#dayname{
+    font-size: 30px;
+
+}
+#weatherIcon{
+    position: absolute;
+    margin-left: 150px;
+    height: 50px;
+}
+#mintemp{
+    position: absolute;
+    font-size: 30px;
+    margin-left: 300px;
+}
+#maxtemp{
+    position: absolute;
+    font-size: 30px;
+    margin-left: 600px;
+}
+#progress-container {
+
+    position: absolute;
+    width: 200px;
+    background-color: #344f75;
+    border-radius: 25px;
+    overflow: hidden;
+    height: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-left: 365px;
+}
+#hour{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+   padding-bottom: 0px;
+   padding-top: 0px;
+
+}
+::-webkit-scrollbar {
+    height: 0px;
+
+}
+#hourstime{
+  margin-top: 5px;
+margin-bottom: 0px;}
+#imghour{
+    width: 40px;
+    margin-top: 5px;
+}
+#hourtemp{
+    margin-top:0px;
+    font-size: 20px;
+}
+#cloud1{
+    position: absolute;
+    display: flex;
+    width: 600px;
+    margin-left: 300px;
+}
+#cloud2{
+    margin-left: 900px;
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    width:
+     600px;
+}
+#cloud3{
+    margin-top: -70px;
+    margin-left: 500px;
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    width: 600px;
+}
+/* #cloud4{
+    margin-top: 0px;
+    margin-left: 900px;
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    width: 600px;
+}
+#cloud5{
+    margin-top: -70px;
+    margin-left: 1200px;
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    width:600px
+} */
+#morecities{
+  z-index: 100;
+  width: 40px;
+  height: 40px;
+  margin-top: 65px;
+  margin-left: 10px;
+}
+#citydiv{
+    display: flex;
+    flex-direction: row;
+    z-index: 100;
+    margin-bottom: 10px;
+}
+#line1{
+background-color: white;
+height: 4px;
+width: 30px;
+margin-bottom: 5px;
+border-radius: 2px;
+}
+#choosecity{
+    height: 200px;
+}
+#weathertxt{
+    color: white;
+        font-family: 'MyCustomFont'
+}
+#tags{
+    width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(81, 85, 85);
+    border: 0px;
+    color:white;
+}
+#Pogodalbl{
+    margin-left: 50px;
+    margin-top: 100px;
+    width: 80px;
+    display: flex;
+    color:rgb(255, 255, 255);
+    margin-right: 10px;
+    font-size: 30px;
+}
+.ui-widget{
+    width: 400px;
+    display: flex;
+    margin-top:100px;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+}
+#confirm{
+    display: inline-block;
+    text-align: center;
+    margin-top: 100px;
+    display: flex;
+    margin-right: 50px;
+ background-color: white;
+ height: 40px;
+ width: 60px;
+ border-radius: 5px;
+ border: 0px;
+}
+#locationsaveddiv{
+    overflow: hidden;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 500px;
+    margin-top: 30px;
+    height: 100px;
+    background-color: white;
+    background: linear-gradient(90deg, rgb(125, 137, 248) 0%, rgb(143, 176, 247) 100%);
+}
+#locationsaved{
+    margin-top: 5px;
+    padding: 0; 
+    margin-bottom: 10px;
+    display: flex;
+}
+#sun{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    margin-right: -234px;
+    margin-top: -218px;
+    z-index: 1;
+}
+#time{
+    padding: 0; 
+    margin-bottom: 10px;
+    margin-top: 0px;
+    display: flex;
+}
+#weathertipelocation{
+    padding: 0; 
+    margin-bottom: 10px;
+    margin-top: 0px;
+font-size: 20px;
+    display: flex;
+}
+#temperature{
+    margin-top: 13px;
+    color: white;
+    display: flex;
+    margin-right: -130px;
+    z-index: 300;
+    font-size:60px;
+    font-family: 'MyCustomFont';
+}
+#firstcl{
+    width: 400px;
+    color: white;
+    margin-left: 20px;
+    display: flex;
+    font-family: 'MyCustomFont';
+    padding: 0; /* Убираем padding */
+    flex-direction:     column;
+}
+
+#menu{
+    display: flex;
+    width: 700px;
+flex-direction: row; /* Выстраивает элементы в ряд */
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+}
+#dot{
+margin-left: 0px;
+    width: 7px;
+    height: 7px;
+    border: 2px solid black;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin-top: -5px;
+}
+#datanum{
+    position: absolute;
+display: flex;
+ font-size: 15px;
+ color:white;
+ font-family: 'MyCustomFont';
+ margin-left: 68px;
+}
